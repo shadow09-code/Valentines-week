@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valentine Week 2026 ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-light: linear-gradient(135deg, #ffd6e8, #fff0f6);
+      --bg-dark: linear-gradient(135deg, #05050a, #120018);
+      --card-light: rgba(255,255,255,0.88);
+      --card-dark: rgba(10,10,20,0.95);
+      --text-light: #3b0a24;
+      --text-dark: #f5f5f5;
+      --accent-light: #ff4d88;
+      --accent-dark: #7b0018;
+      --heart-light: #ff5fa2;
+      --heart-dark: #000000;
+      --transition: all 0.4s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: var(--transition);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    /* 🌌 Animated Background Particles */
+    .particles {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: floatParticle linear infinite;
+    }
+
+    @keyframes floatParticle {
+      from { transform: translateY(110vh); opacity: 0; }
+      10% { opacity: 1; }
+      to { transform: translateY(-10vh); opacity: 0; }
+    }
+
+    /* ================= LOGIN SCREEN ================= */
+    .login-screen {
+      position: fixed;
+      inset: 0;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    .login-hearts {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .login-heart {
+      position: absolute;
+      font-size: 30px;
+      animation: floatHeart 6s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes floatHeart {
+      0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.8;
+      }
+      90% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-20vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 30px;
+      padding: 50px 40px;
+      box-shadow: 0 20px 60px rgba(255, 105, 180, 0.3);
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+      z-index: 10;
+      border: 3px solid #ff4d88;
+    }
+
+    .login-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #ff4d88;
+      margin: 0 0 10px 0;
+    }
+
+    .login-subtitle {
+      color: #666;
+      margin: 0 0 30px 0;
+      font-size: 1rem;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .login-input {
+      padding: 15px 20px;
+      border-radius: 15px;
+      border: 2px solid #ffd6e8;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .login-input:focus {
+      border-color: #ff4d88;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+    }
+
+    .login-button {
+      padding: 15px 20px;
+      border-radius: 15px;
+      border: none;
+      background: linear-gradient(135deg, #ff4d88, #ff69b4);
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .login-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
+    }
+
+    .login-button:active {
+      transform: scale(0.98);
+    }
+
+    .login-error {
+      color: #d63031;
+      font-size: 0.9rem;
+      min-height: 20px;
+      font-weight: 500;
+    }
+
+    .main-content {
+      min-height: 100vh;
+    }
+
+    /* Mobile responsiveness for login */
+    @media (max-width: 500px) {
+      .login-container {
+        padding: 40px 25px;
+      }
+      
+      .login-title {
+        font-size: 2rem;
+      }
+      
+      .login-input, .login-button {
+        padding: 12px 18px;
+        font-size: 0.95rem;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .sub {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: 2px solid currentColor;
+      border-radius: 20px;
+      padding: 6px 14px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    body.dark .toggle-btn {
+      color: white;
+      border-color: white;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ================= COUNTDOWN ================= */
+
+    .countdown-box {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 20px 0 35px;
+    }
+
+    .countdown-box span {
+      display: inline-block;
+      margin: 0 8px;
+    }
+
+    /* ================= TIMELINE ================= */
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .day-card {
+      background: var(--card-light);
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      animation: unlockPop 0.6s ease;
+      border: 2px solid transparent;
+    }
+
+    .day-card.locked {
+      filter: blur(4px);
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    .day-card.locked::after {
+      content: "🔒";
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      font-size: 1.4rem;
+    }
+
+    .day-card:hover {
+      border-color: var(--accent-light);
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+    }
+
+    body.dark .day-card {
+      background: var(--card-dark);
+      border: 2px solid #7b0018;
+      box-shadow: 0 0 20px rgba(123, 0, 24, 0.4);
+    }
+
+    body.dark .day-card:hover {
+      border-color: #7b0018;
+      box-shadow: 0 0 35px rgba(180, 0, 40, 0.9);
+    }
+
+    .day-card img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 10px;
+    }
+
+    .day-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .day-sub {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    /* ================= LOVE CARDS ================= */
+
+    .love-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .love-card {
+      background: var(--card-light);
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      padding: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      animation: unlockPop 0.6s ease;
+      border: 2px solid transparent;
+    }
+
+    .love-card:hover {
+      border-color: var(--accent-light);
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+    }
+
+    body.dark .love-card {
+      background: black;
+      border: 2px solid #7b0018;
+      box-shadow: 0 0 20px rgba(123, 0, 24, 0.5);
+    }
+
+    body.dark .love-card:hover {
+      border-color: #7b0018;
+      box-shadow: 0 0 35px rgba(180, 0, 40, 0.9);
+    }
+
+    .love-card img {
+      width: 70%;
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+
+    /* 🔐 Vault Button */
+    .vault-btn {
+      position: absolute;
+      bottom: -5px;
+      right: 5px;
+      background: radial-gradient(circle, #fff 10%, var(--accent-light) 60%, #000 100%);
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      animation: spin 5s linear infinite;
+      box-shadow: 0 0 25px rgba(255,105,180,0.7);
+      font-size: 1.5rem;
+      z-index: 5;
+    }
+
+    body.dark .vault-btn {
+      background: radial-gradient(circle, #fff 10%, var(--accent-dark) 60%, #000 100%);
+      box-shadow: 0 0 30px rgba(180,0,40,0.9);
+    }
+
+    /* ================= GAMES ================= */
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .game-card {
+      background: var(--card-light);
+      border-radius: 20px;
+      padding: 20px;
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .game-card:hover {
+      border-color: var(--accent-light);
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    }
+
+    body.dark .game-card {
+      background: var(--card-dark);
+      border: 2px solid #7b0018;
+      box-shadow: 0 0 20px rgba(123, 0, 24, 0.5);
+    }
+
+    body.dark .game-card:hover {
+      border-color: #7b0018;
+      box-shadow: 0 0 35px rgba(180, 0, 40, 0.9);
+    }
+
+    .game-card h3 {
+      margin-top: 0;
+    }
+
+    .game-card input, .game-card button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 0.95rem;
+    }
+
+    .game-card button {
+      background: var(--accent-light);
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    body.dark .game-card button {
+      background: var(--accent-dark);
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: 600;
+      min-height: 20px;
+    }
+
+    /* ================= MODAL ================= */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 20px;
+    }
+
+    .modal-content {
+      background: var(--card-light);
+      color: var(--text-light);
+      border-radius: 24px;
+      width: 80vw;
+      height: 80vh;
+      padding: 30px;
+      position: relative;
+      max-width: 900px;
+      overflow-y: auto;
+      animation: hiddenCardEnter 0.8s ease;
+      border: 3px solid var(--accent-light);
+      box-shadow:
+        0 0 40px rgba(255, 105, 180, 0.6),
+        0 0 80px rgba(255, 182, 193, 0.4),
+        0 20px 60px rgba(0,0,0,0.25);
+    }
+
+    body.dark .modal-content {
+      background: var(--card-dark);
+      color: var(--text-dark);
+      border-color: #7b0018;
+      box-shadow:
+        0 0 40px rgba(180, 0, 40, 0.7),
+        0 0 90px rgba(120, 0, 30, 0.5),
+        0 20px 70px rgba(0,0,0,0.7);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ================= HIDDEN CARD ================= */
+
+    .hidden-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hidden-header {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+    }
+
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 28%;
+      overflow: hidden;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 30px rgba(255,105,180,0.4);
+    }
+
+    body.dark .slideshow {
+      box-shadow: 0 0 35px rgba(180,0,40,0.6);
+    }
+
+    .slideshow img {
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+      display: none;
+      border-radius: 18px;
+    }
+
+    .slideshow img.active {
+      display: block;
+    }
+
+    .slide-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.4);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .slide-btn.prev { left: 10px; }
+    .slide-btn.next { right: 10px; }
+
+    .hidden-text {
+      flex: 1;
+      padding: 10px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hidden-text p {
+      margin: 0;
+      line-height: 1.7;
+      max-width: 700px;
+    }
+
+    .music-disc {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff 10%, var(--accent-light) 60%, #000 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      animation: spin 4s linear infinite;
+      box-shadow: 0 0 25px rgba(255,105,180,0.7);
+      margin-top: 10px;
+    }
+
+    body.dark .music-disc {
+      background: radial-gradient(circle, #fff 10%, var(--accent-dark) 60%, #000 100%);
+      box-shadow: 0 0 30px rgba(180,0,40,0.9);
+    }
+
+    .music-disc::after {
+      content: "♪";
+      font-size: 1.6rem;
+      color: white;
+      font-weight: bold;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* ================= PASSWORD MODAL ================= */
+
+    .password-box {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .password-box h3 {
+      margin-bottom: 5px;
+    }
+
+    .password-box input {
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: none;
+      width: 100%;
+      max-width: 280px;
+      font-size: 1rem;
+      outline: none;
+      text-align: center;
+    }
+
+    .password-box button {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      background: var(--accent-light);
+      color: white;
+      transition: var(--transition);
+    }
+
+    body.dark .password-box button {
+      background: var(--accent-dark);
+    }
+
+    /* ================= GALLERY ================= */
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 0 15px rgba(255,105,180,0.4);
+      transition: 0.3s ease;
+    }
+
+    body.dark .gallery img {
+      box-shadow: 0 0 18px rgba(180,0,40,0.6);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ================= TIC TAC TOE ================= */
+
+    .tic-tac-toe {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tic-cell {
+      aspect-ratio: 1/1;
+      background: rgba(0,0,0,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    body.dark .tic-cell {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .tic-status {
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    /* ================= HEART + SPARKLE ANIMATION ================= */
+
+    .heart {
+      position: fixed;
+      bottom: -30px;
+      font-size: 24px;
+      animation: floatUp 3s linear forwards;
+      pointer-events: none;
+      z-index: 1000;
+      text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+    }
+
+    .sparkle {
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      animation: sparkleFloat 2.5s linear forwards;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    @keyframes sparkleFloat {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-80vh) scale(0);
+        opacity: 0;
+      }
+    }
+
+    /* ================= PIXEL FIREWORKS ================= */
+
+    .firework {
+      position: fixed;
+      width: 6px;
+      height: 6px;
+      background: white;
+      animation: explode 1.2s ease-out forwards;
+      z-index: 2000;
+    }
+
+    @keyframes explode {
+      from { transform: scale(1) translate(0,0); opacity: 1; }
+      to { transform: scale(0) translate(var(--dx), var(--dy)); opacity: 0; }
+    }
+
+    /* ================= ANIMATIONS ================= */
+
+    @keyframes unlockPop {
+      0% { transform: scale(0.7); opacity: 0; }
+      60% { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes hiddenCardEnter {
+      0% {
+        transform: translateY(40px) scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      opacity: 0.95;
+      font-size: 1.4rem;
+      font-weight: 600;
+      position: relative;
+      z-index: 2;
+    }
+
+    footer button {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔐 LOGIN SCREEN -->
+  <div class="login-screen" id="loginScreen">
+    <div class="login-hearts" id="loginHearts"></div>
+    <div class="login-container">
+      <h1 class="login-title">💕 Valentine Week 2026 💕</h1>
+      <p class="login-subtitle">Enter to unlock your love story</p>
+      <div class="login-form">
+        <input type="text" id="username" placeholder="Username" class="login-input" />
+        <input type="password" id="password" placeholder="Password" class="login-input" />
+        <button id="loginBtn" class="login-button">Enter 💖</button>
+        <div class="login-error" id="loginError"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT (Hidden until login) -->
+  <div class="main-content" id="mainContent" style="display: none;">
+
+  <!-- 🌌 Particles -->
+  <div class="particles" id="particles"></div>
+
+  <header>
+    <button class="toggle-btn" id="modeToggle">Dark Mode</button>
+    <h1 id="titleText">Celebrate Love — Valentine Week 2026</h1>
+    <div class="sub" id="subtitleText">7 Days. 7 Expressions of Love.</div>
+  </header>
+
+  <main>
+
+    <!-- ⏳ Countdown -->
+    <div class="countdown-box" id="countdown">
+      ⏳ Valentine's Day in:
+      <span id="cdDays">00</span> days
+      <span id="cdHours">00</span> hours
+      <span id="cdMinutes">00</span> minutes
+      <span id="cdSeconds">00</span> seconds
+    </div>
+
+    <section>
+      <h2>Valentine Week Timeline</h2>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section>
+      <h2>Daily Love Cards</h2>
+      <div class="love-cards" id="loveCards">
+        <!-- Vault Button -->
+        <div class="vault-btn" id="vaultBtn">🔐</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Love Games</h2>
+      <div class="games">
+
+        <!-- LOVE COMPATIBILITY -->
+        <div class="game-card">
+          <h3>❤️ Love Compatibility</h3>
+          <input type="text" id="name1" placeholder="Your Name" />
+          <input type="text" id="name2" placeholder="Her Name" />
+          <button id="checkLoveBtn">Check Compatibility</button>
+          <div class="result" id="loveResult"></div>
+          <div style="font-size:1.6rem;cursor:pointer;margin-top:10px;" id="heartUnlock">💖</div>
+        </div>
+
+        <!-- TRUTH OR DARE -->
+        <div class="game-card">
+          <h3>🔥 Truth or Dare</h3>
+          <button id="truthBtn">Truth</button>
+          <button id="dareBtn">Dare</button>
+          <div class="result" id="todResult"></div>
+        </div>
+
+        <!-- WOULD YOU RATHER -->
+        <div class="game-card">
+          <h3>🤔 Would You Rather</h3>
+          <button id="wyrBtn">Get a Question</button>
+          <div class="result" id="wyrResult"></div>
+        </div>
+
+        <!-- TIC TAC TOE -->
+        <div class="game-card">
+          <h3>❌⭕ Tic-Tac-Toe</h3>
+          <div class="tic-tac-toe" id="ticBoard"></div>
+          <div class="tic-status" id="ticStatus">Your turn: ❌</div>
+          <button id="ticReset">Reset Game</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Made with <button id="footerHeart">❤️</button> — A private love universe
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <div class="modal-close" id="modalClose">×</div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- AUDIO ELEMENTS -->
+  <audio id="hiddenCardMusic" loop></audio>
+  <audio id="unlockSound" src="sounds/unlock.mp3" preload="auto"></audio>
+  <audio id="lightMusic" src="audio/light-theme.mp3" preload="auto" loop></audio>
+  <audio id="darkMusic" src="audio/dark-theme.mp3" preload="auto" loop></audio>
+
+  </div> <!-- End main-content -->
+
+  <script>
+    /* ================= LOGIN SYSTEM ================= */
+
+    const loginScreen = document.getElementById('loginScreen');
+    const mainContent = document.getElementById('mainContent');
+    const loginBtn = document.getElementById('loginBtn');
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const loginError = document.getElementById('loginError');
+    const loginHeartsContainer = document.getElementById('loginHearts');
+
+    // Credentials
+    const VALID_USERNAME = "Daiwik";
+    const VALID_PASSWORD = "Siddhi2026";
+
+    // Generate floating hearts on login screen
+    function generateLoginHearts() {
+      for (let i = 0; i < 15; i++) {
+        setTimeout(() => {
+          const heart = document.createElement('div');
+          heart.className = 'login-heart';
+          heart.textContent = ['❤️', '💕', '💖', '💗', '💓', '💝'][Math.floor(Math.random() * 6)];
+          heart.style.left = Math.random() * 100 + 'vw';
+          heart.style.fontSize = (20 + Math.random() * 30) + 'px';
+          heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+          heart.style.animationDelay = (Math.random() * 2) + 's';
+          loginHeartsContainer.appendChild(heart);
+
+          setTimeout(() => heart.remove(), 8000);
+        }, i * 400);
+      }
+    }
+
+    // Start generating hearts
+    generateLoginHearts();
+    setInterval(generateLoginHearts, 6000);
+
+    // Login handler
+    function handleLogin() {
+      const username = usernameInput.value.trim();
+      const password = passwordInput.value.trim();
+
+      if (!username || !password) {
+        loginError.textContent = 'Please enter both username and password';
+        return;
+      }
+
+      if (username === VALID_USERNAME && password === VALID_PASSWORD) {
+        loginError.textContent = '';
+        loginScreen.style.transition = 'opacity 0.8s ease';
+        loginScreen.style.opacity = '0';
+        
+        setTimeout(() => {
+          loginScreen.style.display = 'none';
+          mainContent.style.display = 'block';
+          generateParticles();
+        }, 800);
+      } else {
+        loginError.textContent = '❌ Invalid username or password';
+        usernameInput.value = '';
+        passwordInput.value = '';
+        usernameInput.focus();
+      }
+    }
+
+    loginBtn.addEventListener('click', handleLogin);
+    
+    passwordInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') handleLogin();
+    });
+    
+    usernameInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') passwordInput.focus();
+    });
+
+    /* ================= DATA ================= */
+
+    const hiddenCardLight = {
+      images: ["images/light-secret-1.jpg", "images/light-secret2.png", "images/light-secret3.png"],
+      letter: `Siddhi,
+
+You are the softest miracle in my life — the kind that doesn't announce itself, but changes everything quietly and beautifully. Your smile feels like sunlight through curtains in the morning — gentle, warm, and impossible to ignore.
+
+Every laugh, every small habit, every way you care — it wraps around my heart in ways I didn't know were possible. Loving you feels like coming home to a place I didn't even know I was searching for.
+
+No matter where life takes us, one thing will always remain the same — my heart choosing you, again and again.
+
+Forever yours,
+🤍`,
+      phrase: "Soft hearts. Endless love.",
+      music: "https://r2---sn-u5u5n3tpo-cagl.googlevideo.com/videoplayback?expire=1770364233&ei=6UiFabjuFZTcp-oP0uC22Qc&ip=176.6.145.74&id=o-AAffgWGINFrA7Ijtgz23BqO-HwRzp1SQygPYaLH5qu0Z&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AW-iu_oYFAI0u2UhZs4cbg491rEYd7FSI9gDbV_HTJ1j2aV2BN-blwWYlpmyDrVzyHYGdvCWSln4l-bR&spc=q5xjPEemGn4Br3nrHAv8&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=238.120&lmt=1736655840661232&fexp=51552689%2C51565115%2C51565682%2C51580968&c=ANDROID_VR&txp=5538534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJEij0EwRAIgTDbDzOJYXd3Ph7hohuZ__88Eqh8l_wbv7BZ5i8G9gMUCIDHziFmdhQLlrks4m9rsS6jspL87xA-kJc9iEXPALHfp&pot=Mt4E43eyJm3uGZjjSXXg9Z5O8hOX6l0kOpBuf7U7C29Y_NAvCQFgzeZgxznLggN_Bk91IdX27gQI1xE8EHbudOFUpgogu6CHHGoRw18CnoLKNCPOFk1NdW6XlFpGRQMeFC0-yUxs6YwGHA57ponwgTxLOXSiaNn6tuLLhxBH9Uc2IY9uqZFBxMVT4av8zJj_i2Q7f6AuP7_HQwx9xNOiqrFQvZFnmRMrmFLy_K2XhQLf_adlQ-BS5B-TQArctXKBlOtO5rvYAgYmDJnLUseGuRu55VzuNXRQMYNl_UgYdNow_FA9gwwTmRdLXYPKVZ8mDqT2gMpcUXoQMsGFj2EbbPJglsgreNGvZ37FZHcB76PxWuA0SBDW_6G72kzj84Gs31b7lPORv-GdGF4iONg712-u7o4slOQ6OcvEcf6abwavQcRSXAPUT6eS3r-nn-s4XkbvS9GKU1p5EOg1SnXbJQC-wMvqFQW_1T86aTDThCJFaRC04Lq7AJcReMMCB2pb0XNKKafBH656NMFya7JnKaEvm0p1IoWl4zsY1p5jX-SdSbYcY_KKg9P0WonusVSt8773py1U64FuwawuqtGsOhw4-7hzb7lcGcaj22adkQTyweBF1tpC6GlO_7AEhk23fbJgbZUtQqKMW3AY2gnG_TXa0ICV8_9OZzaqEpG4JBNFALSCjM2-vQKNszjw_UTGgb_jcoJzaHvAT-QKRSghaTBtTJ954DtAvhWgOrczzfeFLaUz8pojg1tgKWcXP2klK1an_C8TRIwx_5IgpvMn77p04EjdgGvRDpCj311q9wLW&cms_redirect=yes&cps=515&met=1770345402,&mh=0p&mip=101.0.62.61&mm=31&mn=sn-u5u5n3tpo-cagl&ms=au&mt=1770345007&mv=m&mvi=2&pl=24&lsparams=cps,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgFcVFSDcu3zOd5QtNuABUs4nYjfVIAuJzo6IlBf3W2h4CIQCM2kZZjo09XzGcpMJbFWmp5AL4c4f8aFpKZINjW55cDg%3D%3D"
+    };
+
+    const hiddenCardDark = {
+      images: ["images/dark-secret1.png", "images/dark-secret2.png", "images/dark-secret3.png"],
+      letter: `Siddhi,
+
+You are not just my love — you are my addiction, my beautiful chaos. You awaken parts of me I never knew existed, and I wouldn't trade that intensity for anything.
+
+There is something dangerously magnetic about you — something that pulls me closer even when I try to resist. And truthfully? I never want to resist.
+
+I choose you — in passion, in storms, in shadows, and in light. You are my temptation and my devotion.
+
+Forever bound to you,
+🖤`,
+      phrase: "Desire. Devotion. Destiny.",
+      music: "https://r2---sn-u5u5n3tpo-cagl.googlevideo.com/videoplayback?expire=1770367060&ei=9FOFabrhL4K1i9oP--HIkQU&ip=176.1.219.254&id=o-AISvQMwBVWXCfB66ped-DxbaJp98am0SvEUdvbDHvYi8&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AW-iu_qlDlG2gBBhYZ0SVRAxNTOM4EV0wBxW46mCIHY_NeZWBq3VFtmLQjylBj2CXUKqy1u2CyH9aTH4&spc=q5xjPOw0AGj6oHqn-n2Y&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=174.799&lmt=1761582355769923&fexp=51552689%2C51565116%2C51565682%2C51580968&c=ANDROID_VR&txp=5308224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJEij0EwRgIhALEdglpkjhUKFCkXn_C3wyfKxK2FmwSS74t1ey6_EvLAAiEAsGGj_TFEHQM8g1UEQM6t1HzWJlYWiMC4zFcTbQZOAQs%3D&pot=Mt4EhmjvmeSRHAOGVqnW1ZM_ifYKqTTsXCoApSOFLtNJhhD0BONNoqX4SPHwp21Uy3mpnphNyoMfQSQET6eOU3btJwf4_3FmHdIhsRbXTlbOHs8AdMe2c25WPCckUsofUR50FGyCbId1W3w7hSDqmROKs6iPDUAJdeCLSMgIrzAoYwNVYmwKn0NKGSknFSj9kpfZkVBdM3H7q5PrhUoUo9AvaCM3yLCqd0bp6Y_YRLwEXh3tS4HGiXhbYerLtFgzT1dg5kckkRev4e37y5xK-bL0LL8hbAcayw4t274_nVs-Wwkca79bEJcgdcrPed8y1EHtIQA1san1UDHv0Hv85RXRBiPOSDNdvUcVMocpEtKuCVXJIlkni9e7RCqQAJkiBpvDCA9b7M8-NACSvAKitl83HldV87g_YMMmwzqA-qhHTWJcXKxRVCLohXyydX0hLMzv9maRwogIp6PY7UUwXcg4ah9kLHbSREU0GYxrYgnT3wMTm8q-TUXcEvUXLKxdsqiETQ6nyifEB_EiDeNCIMuP6LYZnkngk1t16ux3AHEpJf6Y5LqGt2d8BebESpLK-LNrPra97yJPX1e4y07ptoua8i8hfDvclo_x_j0vQKMyj_6REspeyOJBDG1QKd1aJzuXE9v0IHvU9Np_pjJz4Cce1msbs7RzaBRh6i1_iCh4hiKdvYkMzPAkRRP6wjXKgDephGYV8mtTUT04s8vVQwpO24j4WSKhc-6gF2Tp86P3AC6hXtgFCQrp5OXY7K2EQXxO7UjXSAdbBm4QUMI_7Q66ehxoMbv4uzDNPPddSxH0&cms_redirect=yes&cps=201&met=1770345462,&mh=0y&mip=101.0.62.61&mm=31&mn=sn-u5u5n3tpo-cagl&ms=au&mt=1770345007&mv=m&mvi=2&pl=24&lsparams=cps,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIgaxvgJczNTiDQgYjOk745VcrNw85__bWbiFdyZt_8dLACIQDnZZezoBK1bhB9C7VCbOwU-mlQ96wTxrnVMsWLbhPP0A%3D%3D"
+    };
+
+    const timelineLight = [
+      { date: "2024-02-07", day: "Day 1", title: "Rose Day", phrase: "Love begins softly 🌹", image: "rose.webp" },
+      { date: "2024-02-08", day: "Day 2", title: "Propose Day", phrase: "Brave hearts speak 💍", image: "propose.webp" },
+      { date: "2024-02-09", day: "Day 3", title: "Chocolate Day", phrase: "Sweet moments linger 🍫", image: "chocolate.webp" },
+      { date: "2024-02-10", day: "Day 4", title: "Teddy Day", phrase: "Comfort in every hug 🧸", image: "teddy.webp" },
+      { date: "2024-02-11", day: "Day 5", title: "Promise Day", phrase: "Trust is everything 🤞", image: "promise.jpg" },
+      { date: "2024-02-12", day: "Day 6", title: "Hug Day", phrase: "Hold me close 🤗", image: "hug.webp" },
+      { date: "2024-02-13", day: "Day 7", title: "Kiss Day", phrase: "One kiss, forever 💋", image: "kiss.avif" },
+      { date: "2024-02-14", day: "Final", title: "Valentine's Day", phrase: "Love in full bloom 💖", image: "valentines.webp" }
+    ];
+
+    const timelineDark = [
+      { date: "2024-02-07", day: "🖤 Day 1", title: "The Encounter", phrase: "Danger feels like fate 🔥", image: "images/dark1.jpg" },
+      { date: "2024-02-08", day: "🖤 Day 2", title: "The Pull", phrase: "Obsession awakens 🖤", image: "images/dark2.jpg" },
+      { date: "2024-02-09", day: "🖤 Day 3", title: "The Secret", phrase: "Truth cuts deep 🗝️", image: "images/dark3.jpg" },
+      { date: "2024-02-10", day: "🖤 Day 4", title: "The Power Shift", phrase: "Control changes everything ⚡", image: "images/dark4.jpg" },
+      { date: "2024-02-11", day: "🖤 Day 5", title: "The Disappearance", phrase: "Silence screams 🌑", image: "images/dark5.jpg" },
+      { date: "2024-02-12", day: "🖤 Day 6", title: "The Mirror", phrase: "Face your darkness 🪞", image: "images/dark6.jpg" },
+      { date: "2024-02-13", day: "🖤 Day 7", title: "The Bond", phrase: "Fate binds us ⛓️", image: "images/dark7.jpg" },
+      { date: "2024-02-14", day: "🖤 Final", title: "The Promise", phrase: "Forever, no matter the cost 🩸", image: "images/dark-promise.jpg" }
+    ];
+
+    let isDark = false;
+    let currentSlideIndex = 0;
+
+    const modeToggle = document.getElementById("modeToggle");
+    const titleText = document.getElementById("titleText");
+    const subtitleText = document.getElementById("subtitleText");
+    const unlockSound = document.getElementById("unlockSound");
+    const lightMusic = document.getElementById("lightMusic");
+    const darkMusic = document.getElementById("darkMusic");
+    const hiddenCardMusic = document.getElementById("hiddenCardMusic");
+    const footerHeart = document.getElementById("footerHeart");
+    const vaultBtn = document.getElementById("vaultBtn");
+
+    modeToggle.addEventListener("click", () => {
+      isDark = !isDark;
+      document.body.classList.toggle("dark", isDark);
+      modeToggle.textContent = isDark ? "Light Mode" : "Dark Mode";
+      updateThemeText();
+      loadTimeline();
+      loadLoveCards();
+      generateParticles();
+    });
+
+    function updateThemeText() {
+      if (!isDark) {
+        titleText.textContent = "Celebrate Love — Valentine Week 2026";
+        subtitleText.textContent = "A gentle, hopeful journey of hearts.";
+      } else {
+        titleText.textContent = "A Dangerous Love — Valentine Week 2026";
+        subtitleText.textContent = "Desire, obsession, and fate entwined.";
+      }
+    }
+
+    /* ================= PARTICLES ================= */
+
+    const particlesContainer = document.getElementById("particles");
+
+    function generateParticles() {
+      particlesContainer.innerHTML = "";
+      const count = 40;
+
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement("div");
+        p.className = "particle";
+        const size = Math.random() * 6 + 4;
+        p.style.width = size + "px";
+        p.style.height = size + "px";
+        p.style.left = Math.random() * 100 + "vw";
+        p.style.animationDuration = 6 + Math.random() * 6 + "s";
+        p.style.animationDelay = Math.random() * 5 + "s";
+
+        if (isDark) {
+          p.style.background = "crimson";
+          p.style.boxShadow = "0 0 12px crimson";
+        } else {
+          p.style.background = "pink";
+          p.style.boxShadow = "0 0 12px pink";
+        }
+
+        particlesContainer.appendChild(p);
+      }
+    }
+
+    /* ================= COUNTDOWN ================= */
+
+    const cdDays = document.getElementById("cdDays");
+    const cdHours = document.getElementById("cdHours");
+    const cdMinutes = document.getElementById("cdMinutes");
+    const cdSeconds = document.getElementById("cdSeconds");
+
+    const targetDate = new Date("2026-02-14T00:00:00").getTime();
+    let fireworksPlayed = false;
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        cdDays.textContent = "00";
+        cdHours.textContent = "00";
+        cdMinutes.textContent = "00";
+        cdSeconds.textContent = "00";
+
+        if (!fireworksPlayed) {
+          fireworksPlayed = true;
+          playFireworks();
+        }
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      cdDays.textContent = days.toString().padStart(2, "0");
+      cdHours.textContent = hours.toString().padStart(2, "0");
+      cdMinutes.textContent = minutes.toString().padStart(2, "0");
+      cdSeconds.textContent = seconds.toString().padStart(2, "0");
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    function playFireworks() {
+      for (let i = 0; i < 80; i++) {
+        const fw = document.createElement("div");
+        fw.className = "firework";
+        fw.style.left = Math.random() * 100 + "vw";
+        fw.style.top = Math.random() * 100 + "vh";
+        fw.style.background = isDark ? "crimson" : "pink";
+
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * 120 + 40;
+        fw.style.setProperty("--dx", Math.cos(angle) * distance + "px");
+        fw.style.setProperty("--dy", Math.sin(angle) * distance + "px");
+
+        document.body.appendChild(fw);
+        setTimeout(() => fw.remove(), 1300);
+      }
+    }
+
+    /* ================= TIMELINE ================= */
+
+    const timelineContainer = document.getElementById("timeline");
+
+    function loadTimeline() {
+      timelineContainer.innerHTML = "";
+      const data = isDark ? timelineDark : timelineLight;
+      const today = new Date().toISOString().split("T")[0];
+
+      data.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "day-card";
+
+        const isLocked = today < item.date;
+        if (isLocked) card.classList.add("locked");
+
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.title}" />
+          <div class="day-title">${item.day} — ${item.title}</div>
+          <div class="day-sub">${item.phrase}</div>
+        `;
+
+        if (!isLocked) {
+          card.addEventListener("click", () => {
+            showModal(item.title, item.phrase);
+          });
+        }
+
+        timelineContainer.appendChild(card);
+      });
+    }
+
+    /* ================= LOVE CARDS ================= */
+
+    const loveCardsContainer = document.getElementById("loveCards");
+
+    function loadLoveCards() {
+      loveCardsContainer.querySelectorAll(".love-card").forEach(c => c.remove());
+
+      const lightEmojis = ["💖", "🌸", "✨", "🥰", "💝", "🌹", "🫶", "💫"];
+      const darkEmojis = ["🖤", "🔥", "🩸", "🥀", "🕷️", "🌑", "⛓️", "💀"];
+
+      for (let i = 0; i < 8; i++) {
+        const card = document.createElement("div");
+        card.className = "love-card";
+
+        card.innerHTML = `
+          <img src="${isDark ? "images/dark-heart.jpg" : "images/light-heart.jpg"}" alt="Love Card" />
+          <div style="font-size:1.1rem;">
+            ${isDark ? darkEmojis[i] : lightEmojis[i]} 
+            ${isDark ? "Sinful Love" : "Pure Love"}
+          </div>
+        `;
+
+        card.addEventListener("click", () => {
+          showModal("Love Card", isDark
+            ? "A dark whisper of obsession and devotion 🖤"
+            : "A gentle note of affection and warmth 💖"
+          );
+        });
+
+        loveCardsContainer.insertBefore(card, vaultBtn);
+      }
+    }
+
+    /* ================= MODAL ================= */
+
+    const modal = document.getElementById("modal");
+    const modalBody = document.getElementById("modalBody");
+    const modalClose = document.getElementById("modalClose");
+
+    function showModal(title, content) {
+      modalBody.innerHTML = `<h3>${title}</h3><p>${content}</p>`;
+      modal.style.display = "flex";
+    }
+
+    modalClose.addEventListener("click", () => modal.style.display = "none");
+    modal.addEventListener("click", e => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+
+    /* ================= LOVE COMPATIBILITY ================= */
+
+    const name1Input = document.getElementById("name1");
+    const name2Input = document.getElementById("name2");
+    const loveResult = document.getElementById("loveResult");
+    const checkLoveBtn = document.getElementById("checkLoveBtn");
+    const heartUnlock = document.getElementById("heartUnlock");
+
+    checkLoveBtn.addEventListener("click", () => {
+      const n1 = name1Input.value.trim().toLowerCase();
+      const n2 = name2Input.value.trim().toLowerCase();
+
+      if (!n1 || !n2) {
+        loveResult.textContent = "Please enter both names.";
+        return;
+      }
+
+      if ((n1 === "daiwik" && n2 === "siddhi") || (n1 === "siddhi" && n2 === "daiwik")) {
+        loveResult.textContent = "💯% — A once-in-a-lifetime love.";
+      } else {
+        const percent = Math.floor(Math.random() * 20) + 80;
+        loveResult.textContent = percent + "% — A beautiful connection.";
+      }
+    });
+
+    heartUnlock.addEventListener("click", () => {
+      showPasswordModal();
+    });
+
+    /* ================= TRUTH OR DARE ================= */
+
+    const truths = [
+      "What is your deepest romantic fantasy?",
+      "Who was your first love?",
+      "What scares you most in love?",
+      "Have you ever fallen for someone unexpectedly?"
+    ];
+
+    const dares = [
+      "Send a sweet message to someone you love.",
+      "Write a love note to yourself.",
+      "Listen to a romantic song and close your eyes.",
+      "Smile for 10 seconds without stopping."
+    ];
+
+    document.getElementById("truthBtn").addEventListener("click", () => {
+      document.getElementById("todResult").textContent =
+        truths[Math.floor(Math.random() * truths.length)];
+    });
+
+    document.getElementById("dareBtn").addEventListener("click", () => {
+      document.getElementById("todResult").textContent =
+        dares[Math.floor(Math.random() * dares.length)];
+    });
+
+    /* ================= WOULD YOU RATHER ================= */
+
+    const wyrQuestions = [
+      "Would you rather cuddle all night or go on a surprise date?",
+      "Would you rather receive love letters or surprise gifts?",
+      "Would you rather have deep talks at midnight or playful teasing all day?",
+      "Would you rather relive your first kiss or your first hug?",
+      "Would you rather be best friends first or fall in love instantly?"
+    ];
+
+    document.getElementById("wyrBtn").addEventListener("click", () => {
+      document.getElementById("wyrResult").textContent =
+        wyrQuestions[Math.floor(Math.random() * wyrQuestions.length)];
+    });
+
+    /* ================= TIC TAC TOE ================= */
+
+    const ticBoard = document.getElementById("ticBoard");
+    const ticStatus = document.getElementById("ticStatus");
+    const ticReset = document.getElementById("ticReset");
+
+    let ticCells = Array(9).fill("");
+    let currentPlayer = "❌";
+    let gameActive = true;
+
+    function createTicBoard() {
+      ticBoard.innerHTML = "";
+      ticCells.forEach((cell, index) => {
+        const div = document.createElement("div");
+        div.className = "tic-cell";
+        div.textContent = cell;
+        div.addEventListener("click", () => handleTicClick(index));
+        ticBoard.appendChild(div);
+      });
+      ticStatus.textContent = `Your turn: ${currentPlayer}`;
+    }
+
+    function handleTicClick(index) {
+      if (!gameActive || ticCells[index]) return;
+
+      ticCells[index] = currentPlayer;
+      if (checkTicWin()) {
+        ticStatus.textContent = `${currentPlayer} wins! 🎉`;
+        gameActive = false;
+      } else if (ticCells.every(cell => cell)) {
+        ticStatus.textContent = "It's a draw! 😅";
+        gameActive = false;
+      } else {
+        currentPlayer = currentPlayer === "❌" ? "⭕" : "❌";
+        ticStatus.textContent = `Your turn: ${currentPlayer}`;
+      }
+      createTicBoard();
+    }
+
+    function checkTicWin() {
+      const wins = [
+        [0,1,2],[3,4,5],[6,7,8],
+        [0,3,6],[1,4,7],[2,5,8],
+        [0,4,8],[2,4,6]
+      ];
+      return wins.some(pattern =>
+        pattern.every(i => ticCells[i] === currentPlayer)
+      );
+    }
+
+    ticReset.addEventListener("click", () => {
+      ticCells = Array(9).fill("");
+      currentPlayer = "❌";
+      gameActive = true;
+      createTicBoard();
+    });
+
+    /* ================= PASSWORD MODAL ================= */
+
+    function showPasswordModal() {
+      modalBody.innerHTML = `
+        <div class="password-box">
+          <h3>🔐 Enter the Secret Password</h3>
+          <input type="password" id="passwordInput" placeholder="Password" />
+          <button id="passwordSubmit">Unlock</button>
+          <div class="result" id="passwordResult"></div>
+        </div>
+      `;
+      modal.style.display = "flex";
+
+      document.getElementById("passwordSubmit").addEventListener("click", handlePasswordSubmit);
+      document.getElementById("passwordInput").addEventListener("keyup", e => {
+        if (e.key === "Enter") handlePasswordSubmit();
+      });
+    }
+
+    function handlePasswordSubmit() {
+      const input = document.getElementById("passwordInput").value;
+      const result = document.getElementById("passwordResult");
+
+      if (!input) {
+        result.textContent = "Please enter a password.";
+        return;
+      }
+
+      if (!isDark && input === "lightlove123") {
+        unlockSound.play();
+        vibrate();
+        createHeartsAndSparkles();
+        showHiddenCard(hiddenCardLight, "Hidden Light Card");
+      } else if (isDark && input === "darkdesire456") {
+        unlockSound.play();
+        vibrate();
+        createHeartsAndSparkles();
+        showHiddenCard(hiddenCardDark, "Hidden Dark Card");
+      } else {
+        result.textContent = "Wrong password 💔";
+      }
+    }
+
+    /* ================= VAULT ================= */
+
+    vaultBtn.addEventListener("click", () => {
+      showVaultModal();
+    });
+
+    function showVaultModal() {
+      modalBody.innerHTML = `
+        <div class="password-box">
+          <h3>🗝️ Enter Vault Code</h3>
+          <input type="password" id="vaultInput" maxlength="4" placeholder="4-digit code" />
+          <button id="vaultSubmit">Unlock Vault</button>
+          <div class="result" id="vaultResult"></div>
+        </div>
+      `;
+      modal.style.display = "flex";
+
+      document.getElementById("vaultSubmit").addEventListener("click", handleVaultSubmit);
+      document.getElementById("vaultInput").addEventListener("keyup", e => {
+        if (e.key === "Enter") handleVaultSubmit();
+      });
+    }
+
+    function handleVaultSubmit() {
+      const input = document.getElementById("vaultInput").value;
+      const result = document.getElementById("vaultResult");
+
+      if (input === "1234") {
+        unlockSound.play();
+        vibrate();
+        createHeartsAndSparkles();
+        showGallery();
+      } else {
+        result.textContent = "Wrong code 💔";
+      }
+    }
+
+    function showGallery() {
+      modalBody.innerHTML = `
+        <div class="hidden-card">
+          <div class="hidden-header">💞 Our Vault</div>
+          <p>Our memories, our moments, our love.</p>
+          <div class="gallery">
+            <img src="images/us1.jpg" />
+            <img src="images/us2.jpg" />
+            <img src="images/us3.jpg" />
+            <img src="images/us4.jpg" />
+            <img src="images/us5.jpg" />
+            <img src="images/us6.jpg" />
+          </div>
+        </div>
+      `;
+    }
+
+    /* ================= HIDDEN CARD DISPLAY ================= */
+
+    function showHiddenCard(data, title) {
+      currentSlideIndex = 0;
+      const imagesHtml = data.images.map((src, i) => `
+        <img src="${src}" class="${i === 0 ? "active" : ""}" />
+      `).join("");
+
+      modalBody.innerHTML = `
+        <div class="hidden-card">
+          <div class="hidden-header">${title}</div>
+
+          <div class="slideshow">
+            ${imagesHtml}
+            <button class="slide-btn prev" onclick="prevSlide()">❮</button>
+            <button class="slide-btn next" onclick="nextSlide()">❯</button>
+          </div>
+
+          <div class="hidden-text">
+            <p><strong>Letter to Siddhi:</strong></p>
+            <p style="white-space:pre-line;">${data.letter}</p>
+            <p><em>${data.phrase}</em></p>
+            <div class="music-disc" onclick="toggleHiddenMusic('${data.music}')"></div>
+          </div>
+        </div>
+      `;
+      modal.style.display = "flex";
+    }
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll(".slideshow img");
+      slides.forEach(slide => slide.classList.remove("active"));
+      if (slides[index]) slides[index].classList.add("active");
+    }
+
+    function nextSlide() {
+      const slides = document.querySelectorAll(".slideshow img");
+      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+      showSlide(currentSlideIndex);
+    }
+
+    function prevSlide() {
+      const slides = document.querySelectorAll(".slideshow img");
+      currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+      showSlide(currentSlideIndex);
+    }
+
+    window.nextSlide = nextSlide;
+    window.prevSlide = prevSlide;
+
+    /* ================= MUSIC CONTROL ================= */
+
+    function toggleHiddenMusic(src) {
+      // Stop all other music
+      lightMusic.pause();
+      darkMusic.pause();
+      
+      // Toggle the hidden card music
+      if (hiddenCardMusic.src === src && !hiddenCardMusic.paused) {
+        hiddenCardMusic.pause();
+      } else {
+        hiddenCardMusic.src = src;
+        hiddenCardMusic.play()
+          .then(() => {
+            console.log("Hidden card music started 🎵");
+          })
+          .catch(err => console.log("Audio blocked or error:", err));
+      }
+    }
+
+    footerHeart.addEventListener("click", () => {
+      vibrate();
+      if (isDark) {
+        darkMusic.play();
+      } else {
+        lightMusic.play();
+      }
+      createHeartsAndSparkles();
+    });
+
+    /* ================= HEART + SPARKLE EFFECT ================= */
+
+    function createHeartsAndSparkles() {
+      const count = 20;
+      for (let i = 0; i < count; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.textContent = "❤";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = 2 + Math.random() * 2 + "s";
+        heart.style.fontSize = 16 + Math.random() * 20 + "px";
+        heart.style.color = isDark ? "black" : "wine";
+        document.body.appendChild(heart);
+
+        const sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
+        sparkle.style.left = Math.random() * 100 + "vw";
+        sparkle.style.width = sparkle.style.height = (Math.random() * 4 + 4) + "px";
+        sparkle.style.animationDuration = 2 + Math.random() * 2 + "s";
+
+        if (isDark) {
+          sparkle.style.background = "crimson";
+          sparkle.style.boxShadow = "0 0 10px crimson";
+        } else {
+          sparkle.style.background = "pink";
+          sparkle.style.boxShadow = "0 0 10px pink";
+        }
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(() => {
+          heart.remove();
+          sparkle.remove();
+        }, 4000);
+      }
+    }
+
+    /* ================= VIBRATION ================= */
+
+    function vibrate() {
+      if (navigator.vibrate) {
+        navigator.vibrate(80);
+      }
+    }
+
+    /* ================= INIT ================= */
+
+    updateThemeText();
+    loadTimeline();
+    loadLoveCards();
+    createTicBoard();
+    generateParticles();
+  </script>
+
+</body>
+</html>
